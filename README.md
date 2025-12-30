@@ -1,5 +1,5 @@
 Project Name: Vehicle Rental
-Live URL: https://vehicle-rental-a2.vercel.app
+Live URL:  https://vehicle-rental-main.vercel.app/
 
 ## The Vehicle Rental System is a backend API designed to manage a vehicle rental service efficiently. It handles:
    1. Vehicles: Manage vehicle inventory and track availability.
