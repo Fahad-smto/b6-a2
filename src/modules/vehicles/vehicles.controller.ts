@@ -13,7 +13,7 @@ const createVehicle = async (req: Request, res: Response) => {
 const getAllVehicles = async (req: Request, res: Response) => {
   try {
     const vehicles = await vehiclesService.getAllVehicles();
-    return res.status(200).json({ success: true, data: vehicles });
+    return res.status(200).json({ success: true, message: "Vehicles retrieved", data: vehicles });
   } catch (error: any) {
     return res.status(500).json({ success: false, message: error.message });
   }
@@ -22,7 +22,7 @@ const getAllVehicles = async (req: Request, res: Response) => {
 const getVehicleById = async (req: Request, res: Response) => {
   try {
     const vehicle = await vehiclesService.getVehicleById(Number(req.params.vehicleId));
-    return res.status(200).json({ success: true, data: vehicle });
+    return res.status(200).json({ success: true, message: "Vehicle retrieved", data: vehicle });
   } catch (error: any) {
     return res.status(404).json({ success: false, message: error.message });
   }

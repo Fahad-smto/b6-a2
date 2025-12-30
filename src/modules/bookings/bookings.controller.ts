@@ -19,7 +19,7 @@ const createBooking = async (req: Request, res: Response) => {
 const getBookings = async (req: Request, res: Response) => {
   try {
     const bookings = await bookingsService.getBookings(req.user);
-    return res.status(200).json({ success: true, data: bookings });
+    return res.status(200).json({ success: true, message: "Bookings retrieved", data: bookings });
   } catch (error: any) {
     return res.status(500).json({ success: false, message: error.message });
   }
